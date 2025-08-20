@@ -1,6 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-    --color-crow: #0D0907;
-    --color-gloomy: #F0F0F6;
+    --color-zekrom: #0D0907;
+    --color-castform: #F0F0F6;
+    --color-minccino: #E4E6EB;
+    --color-onix: #767676;
+    --color-luxray: #FFB400;
+}
+
+@layer components {
+    .nav-circle {
+        @apply rounded-full bg-castform p-2 hover:bg-luxray
+    }
 }
