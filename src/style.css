@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import "tailwindcss";
 
 @theme {
+    --font-inter: 'Inter', sans-serif;
     --color-zekrom: #0D0907;
     --color-castform: #F0F0F6;
     --color-minccino: #E4E6EB;
@@ -11,5 +13,14 @@
 @layer components {
     .nav-circle {
         @apply rounded-full bg-castform p-2 hover:bg-luxray
+    }
+}
+
+@layer base {
+    h4 {
+        @apply text-lg font-inter font-medium
+    }
+    h6 {
+        @apply text-sm text-onix
     }
 }
