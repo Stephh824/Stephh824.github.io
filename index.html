@@ -11,8 +11,9 @@
 </head>
 <body class="bg-castform">
   <div class="flex">
-    <div class="bg-white h-screen w-1/6 fixed top-0 left-0">
-      <div class="flex flex-col justify-center items-center h-full">
+    <!-- Sidebar -->
+    <div class="bg-white h-screen w-1/6 fixed top-0 left-0 flex justify-center">
+      <div class="flex flex-col justify-center items-center w-5/7 h-full">
         <!-- Image Placeholder -->
         <div class="w-30 h-30 bg-minccino rounded-full flex items-center justify-center mb-4">
           <span class="text-white font-bold text-xl">SP</span>
@@ -35,8 +36,10 @@
             </div>            
           </div>
 
+          <hr class="my-6 border-t border-minccino w-full">
+
           <!-- Info Section -->
-           <div class="w-5/7 mt-6 text-sm justify-center items-center">
+           <div class="w-full text-sm justify-center items-center">
             <div class="flex justify-between mb-2">
               <span class="bg-luxray px-2 rounded"><h5>Age:</h5></span>
               <span><h5>22</h5></span>
@@ -45,14 +48,22 @@
               <span class="bg-luxray px-2 rounded"><h5>Freelance:</h5></span>
               <span><h5 class="text-green-600">Available</h5></span>
             </div>
-            <div class="flex justify-between mb-2">
+            <div class="flex justify-between">
               <span class="bg-luxray px-2 rounded"><h5>Located:</h5></span>
               <span><h5>Delano, CA</h5></span>
             </div>
            </div>
 
+           <hr class="my-6 border-t border-minccino w-full">
+
+           <!-- Languages -->
+           <div class="w-full">
+            <h4 class="mb-2">Lanugages</h4>
+           </div>
       </div>
     </div>
+
+    <!-- Navbar -->
     <nav class="bg-white w-1/12 ml-auto h-screen content-evenly flex-none fixed top-0 right-0">
       <ul class="grid grid-rows-6 grid-cols-1 justify-items-center items-center gap-13">
         <div class="nav-circle group">
