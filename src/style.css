@@ -21,7 +21,7 @@
         @apply text-lg font-inter font-medium
     }
     h6 {
-        @apply text-sm text-onix font-inter font-light
+        @apply text-sm text-onix font-inter
     }
     h5 {
         @apply text-sm text-zekrom font-inter font-light
