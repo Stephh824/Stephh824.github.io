@@ -10,10 +10,11 @@
     <script src="https://kit.fontawesome.com/5a78a11cd0.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-castform">
-  <div class="flex">
+  <div class="grid gird-cols-12 min-h-screen gap-10">
     <!-- Sidebar -->
-    <div class="bg-white h-screen w-1/6 fixed top-0 left-0 flex justify-center">
-      <div class="flex flex-col justify-center items-center w-5/7 h-full">
+    <div class="col-start-1 col-span-2 bg-white flex justify-center sticky top-0 left-0 min-h-screen">
+    <!-- <div class="bg-white h-screen w-1/6 fixed top-0 left-0 flex justify-center"> -->
+      <div class="flex flex-col justify-center items-center h-full">
         <!-- Image Placeholder -->
         <div class="w-30 h-30 bg-minccino rounded-full flex items-center justify-center mb-4">
           <span class="text-white font-bold text-xl">SP</span>
@@ -136,8 +137,16 @@
       </div>
     </div>
 
+
+    <main class="col-start-3 col-span-9 flex justify-center">
+      <section id="intro" class="bg-white w-full px-8 py-10 h-fit">
+        <h1>I'm Stephanie Pena</h1>
+      </section>
+    </main>
+
     <!-- Navbar -->
-    <nav class="bg-white w-1/12 ml-auto h-screen content-evenly flex-none fixed top-0 right-0">
+    <nav class="col-end-13 col-span-1 bg-white content-evenly flex-none sticky top-0 right-0">
+    <!-- <nav class="bg-white w-1/12 ml-auto h-screen content-evenly flex-none fixed top-0 right-0"> -->
       <ul class="grid grid-rows-6 grid-cols-1 justify-items-center items-center gap-13">
         <div class="nav-circle group">
           <li class="row-start-1 row-end-2">
@@ -213,5 +222,6 @@
       </ul>
     </nav>
   </div>
+
 </body>
 </html>

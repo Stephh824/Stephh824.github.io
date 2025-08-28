@@ -26,4 +26,7 @@
     h5 {
         @apply text-sm text-zekrom font-inter font-light
     }
+    h1 {
+        @apply text-4xl font-bold text-zekrom
+    }
 }
