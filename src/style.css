@@ -14,13 +14,16 @@
     .nav-circle {
         @apply rounded-full bg-castform p-2 hover:bg-luxray
     }
+    .link-card {
+        @apply p-6 bg-white hover:shadow-md transition
+    }
 }
 
 @layer base {
     h4 {
-        @apply text-lg font-inter font-medium
+        @apply text-lg font-inter font-semibold
     }
-    h6 {
+    p {
         @apply text-sm text-onix font-inter
     }
     h5 {
@@ -28,5 +31,8 @@
     }
     h1 {
         @apply text-4xl font-bold text-zekrom
+    }
+    h2 {
+        @apply text-2xl font-bold text-zekrom text-center
     }
 }
