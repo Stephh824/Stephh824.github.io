@@ -17,6 +17,9 @@
     .link-card {
         @apply p-6 bg-white hover:shadow-md transition transition-transform transform hover:-translate-y-1
     }
+    .separator {
+        @apply my-6 border-t border-minccino w-full
+    }
 }
 
 @layer base {
