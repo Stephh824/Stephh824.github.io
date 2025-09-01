@@ -312,6 +312,23 @@
       <section id="aboutme" class="mb-20">
         <h2 class="mb-2">About Me</h2>
         <p class="mx-auto mb-6 w-1/3 text-center">Here's a bit more about my background, journey, and what makes me, me. :]</p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div class="card relative bg-white py-50 cursor-pointer transition-all duration-300 overflow-hidden group" 
+            onclick="openAboutModal(
+              'Who I Am',
+              'Something here'
+            )">
+            <h3 class="text-lg font-semibold text-center">Who I Am</h3>
+            <div class="card-content max-h-0 overflow-hidden transition-all duration-500">
+              <p class="mt-4">
+                Beep.
+              </p>
+            </div>
+            <div class="absolute inset-0 border-2 opacity-0 group-hover:opacity-100 pointer-events-none"
+              style="border-image: linear-gradient(to right, #facc15, #fef08a) 1;"></div>
+          </div>
+          <!-- Add more cards -->
+        </div>
       </section>
     </main>
 
@@ -394,7 +411,7 @@
     </nav>
   </div>
 
-  <!-- Modal -->
+  <!-- Modals -->
   <div id="certModal" class="fixed inset-0 bg-black bg-opacity-80 hidden justify-center items-center z-50">
     <div class="relative bg-white p-4 rounded-xl max-w-3xl w-full">
       <!-- Close Button -->
@@ -402,6 +419,16 @@
       <!-- Dynamic Content -->
       <img id="modalImage" src="" alt="Certificate" class="w-full rounded-lg">
       <p id="modalTitle" class="mt-4 text-center text-lg font-semibold"></p>
+    </div>
+  </div>
+  <div id="aboutModal" class="fixed inset-0 bg-black bg-opacity-80 hidden justify-center items-center z-50">
+    <div class="relative bg-white p-6 rounded-xl max-w-2xl w-full">
+      <!-- Close Button -->
+      <button onclick="closeAboutModal()" 
+              class="absolute top-2 right-2 text-gray-600 hover:text-gray-900 text-2xl">&times;</button>
+      <!-- Dynamic Content -->
+      <h2 id="aboutModalTitle" class="text-xl font-bold mb-4"></h2>
+      <p id="aboutModalText" class="text-gray-700"></p>
     </div>
   </div>
   <script>
@@ -415,6 +442,17 @@
     function closeCertModal() {
       document.getElementById('certModal').classList.remove('flex');
       document.getElementById('certModal').classList.add('hidden');
+    }
+    function openAboutModal(title, text) {
+      document.getElementById('aboutModalTitle').textContent = title;
+      document.getElementById('aboutModalText').textContent = text;
+      document.getElementById('aboutModal').classList.remove('hidden');
+      document.getElementById('aboutModal').classList.add('flex');
+    }
+
+    function closeAboutModal() {
+      document.getElementById('aboutModal').classList.remove('flex');
+      document.getElementById('aboutModal').classList.add('hidden');
     }
   </script>
 
