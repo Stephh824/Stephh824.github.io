@@ -411,9 +411,9 @@
     </nav>
   </div>
 
-  <!-- Modals -->
-  <div id="certModal" class="fixed inset-0 bg-black bg-opacity-80 hidden justify-center items-center z-50">
-    <div class="relative bg-white p-4 rounded-xl max-w-3xl w-full">
+  <!-- Certification Modals -->
+  <div id="certModal" class="fixed inset-0 hidden justify-center items-center z-50 backdrop-blur-lg">
+    <div class="relative bg-white p-4 rounded-xl max-w-3xl w-full shadow-2xl shadow-zekrom">
       <!-- Close Button -->
       <button onclick="closeCertModal()" class="absolute top-2 right-2 text-gray-600 hover:text-gray-900 text-2xl">&times;</button>
       <!-- Dynamic Content -->
@@ -421,14 +421,17 @@
       <p id="modalTitle" class="mt-4 text-center text-lg font-semibold"></p>
     </div>
   </div>
-  <div id="aboutModal" class="fixed inset-0 bg-black bg-opacity-80 hidden justify-center items-center z-50">
-    <div class="relative bg-white p-6 rounded-xl max-w-2xl w-full">
-      <!-- Close Button -->
-      <button onclick="closeAboutModal()" 
-              class="absolute top-2 right-2 text-gray-600 hover:text-gray-900 text-2xl">&times;</button>
-      <!-- Dynamic Content -->
-      <h2 id="aboutModalTitle" class="text-xl font-bold mb-4"></h2>
-      <p id="aboutModalText" class="text-gray-700"></p>
+  <!-- About Me Modals -->
+  <div id="aboutModal" class="fixed inset-0 hidden justify-center items-center z-50 backdrop-blur-lg">
+    <div class="absolute inset-0 bg-gradient-radial from-black to-transparent bg-opacity-60 pointer-events-none"></div>
+      <div class="relative bg-white p-6 rounded-xl max-w-2xl w-full shadow-2xl shadow-zekrom">
+        <!-- Close Button -->
+        <button onclick="closeAboutModal()" 
+                class="absolute top-2 right-2 text-gray-600 hover:text-gray-900 text-2xl">&times;</button>
+        <!-- Dynamic Content -->
+        <h2 id="aboutModalTitle" class="text-xl font-bold mb-4"></h2>
+        <p id="aboutModalText" class="text-gray-700"></p>
+      </div>
     </div>
   </div>
   <script>
