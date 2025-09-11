@@ -20,6 +20,9 @@
     .separator {
         @apply my-6 border-t border-minccino w-full
     }
+    .aboutme-card {
+        @apply relative bg-white py-50 cursor-pointer transition-all duration-300 overflow-hidden
+    }
 }
 
 @layer base {
