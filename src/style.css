@@ -23,6 +23,12 @@
     .aboutme-card {
         @apply relative bg-white py-50 cursor-pointer transition-all duration-300 overflow-hidden
     }
+    .tooltip {
+        @apply absolute -top-10 px-3 py-1 bg-zekrom rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-200
+    }
+    .arrow {
+        @apply absolute left-1/2 -bottom-2 transform -translate-x-1/2 w-0 h-0 border-l-6 border-r-6 border-t-6 border-transparent border-t-black
+    }
 }
 
 @layer base {
