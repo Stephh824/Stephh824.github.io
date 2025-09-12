@@ -398,11 +398,17 @@
     <nav class="col-end-13 col-span-1 bg-white content-evenly sticky top-0 right-0 h-screen">
       <ul class="grid grid-rows-6 grid-cols-1 justify-items-center items-center gap-13">
         <!-- Home -->
-        <a href="#intro" class="nav-circle group">
-          <li class="row-start-1 row-end-2">
-            <i class="fa-solid fa-house fa-lg text-onix group-hover:text-zekrom"></i>
-          </li>
-        </a>
+        <li class="row-start-1 row-end-2">
+          <div class="relative group flex flex-col items-center">
+            <div class="absolute -top-10 px-3 py-1 bg-zekrom rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+              <p class="text-white">Home</p>
+              <div class="absolute left-1/2 -bottom-2 transform -translate-x-1/2 w-0 h-0 border-l-6 border-r-6 border-t-6 border-transparent border-t-black"></div>
+            </div>
+            <a href="#intro" class="nav-circle">
+              <i class="fa-solid fa-house fa-lg text-onix group-hover:text-zekrom"></i>
+            </a>
+          </div>
+        </li>
         <!-- Projects -->
         <a href="#projects" class="nav-circle group">
           <li class="row-start-2 row-end-3">
