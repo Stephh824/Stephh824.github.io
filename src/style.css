@@ -10,6 +10,10 @@
     --color-luxray: #FFB400;
 }
 
+body {
+    font-family: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
 @layer components {
     .nav-circle {
         @apply inline-flex items-center justify-center w-10 h-10 rounded-full bg-castform p-2 hover:bg-luxray
