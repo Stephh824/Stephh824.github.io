@@ -42,18 +42,18 @@ body {
 
 @layer base {
     h4 {
-        @apply text-lg font-inter font-semibold
+        @apply text-base font-inter font-semibold
     }
     p {
-        @apply text-sm text-onix font-inter
+        @apply text-xs text-onix font-inter
     }
     h5 {
-        @apply text-sm text-zekrom font-inter font-light
+        @apply text-xs text-zekrom font-inter font-light
     }
     h1 {
-        @apply text-4xl font-bold text-zekrom
+        @apply text-3xl font-bold text-zekrom
     }
     h2 {
-        @apply text-2xl font-bold text-zekrom text-center
+        @apply text-xl font-bold text-zekrom text-center
     }
 }
