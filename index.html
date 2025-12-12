@@ -187,9 +187,14 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- AccesSOS Project -->
           <div class="link-card cursor-pointer" onclick="openProjectModal('accesSOSchatbot')">
-            <img src="./imgs/projects/accesSOS.png" alt="Sample Project" class="w-full h-40 object-contain rounded-lg mb-4 mx-auto">
-            <h4 class="">GenAI for Emergency Calls</h4>
+            <img src="./imgs/projects/accesSOS.png" alt="accesSOS" class="w-full h-40 object-contain rounded-lg mb-4 mx-auto">
+            <h4>GenAI for Emergency Calls</h4>
             <p class="mt-2">A real-time AI chatbot that bridges communication barriers for people with disabilities during 911 calls by converting speech to text and generating dispatcher-ready responses.</p>
+          </div>
+          <div class="link-card cursor-pointer" onclick="openProjectModal('WebSearch')">
+            <img src="./imgs/projects/sample.png" alt="Sample Project" class="w-full h-40 object-contain rounded-lg mb-4 mx-auto">
+            <h4>Project Title</h4>
+            <p class="mt-2">Brief description of the project highlighting key features, technologies used, and its impact or purpose.</p>
           </div>
           <!-- Add more cards -->
         </div>
@@ -585,6 +590,65 @@
 
       <div class="flex gap-4 mt-6">
         <a href="./demos/accesSOS demo.mp4" target="_blank" class="bg-luxray text-zekrom px-4 py-2 rounded-lg hover:text-white transition hover:shadow-md font-semibold">Live Demo</a>
+      </div>
+    </div>
+  </div>
+  <div id="WebSearch" class="fixed inset-0 flex items-center justify-center hidden z-50 backdrop-blur-lg">
+    <div class="bg-white rounded-lg p-8 w-11/12 md:w-2/3 lg:w-1/2 relative shadow-2xl shadow-zekrom">
+      <!-- Close Button -->
+      <button onclick="closeProjectModal('WebSearch')" class="absolute top-3 right-3 text-onix hover:text-zekrom text-xl font-bold">&times;</button>
+
+      <!-- Modal Content -->
+      <h2 class="mb-4 text-left">WebSearch</h2>
+
+      <div class="mb-4">
+        <h4 class="mb-1">Introduction</h4>
+        <p class="text-sm">
+          WebSearch is a lightweight search engine built in Golang. Designed as a deep dive into information retrieval systems, it performs web crawling, 
+          text extraction, indexing, and ranking similar to a simplified version of how Google Search works. The project explores how search engines operate
+          at a low level by implementing all logic from scratch.
+        </p>
+      </div>
+
+      <div class="mb-4">
+        <h4 class="mb-1">Problem</h4>
+        <p class="text-sm">
+          Most search engines tend to be complex, opaque systems that hide their internal mechanisms really well. As a resullt, it's rather difficult to learn
+          how core components like crawling, indexing, and ranking actually work. Existing libraries abstract away important information-retrieval
+          concepts, making it challenging for students to understand what happens under the hood of a search engine.
+        </p>
+      </div>
+
+      <div class="mb-4">
+        <h4 class="mb-1">Solution</h4>
+        <p class="text-sm">
+          To better understand how real search engines work, I built a complete end-to-end search system from scratch. The solution focuses on designing the 
+          full pipeline: crawling, cleaning, indexing, and ranking documents while keeping the implementation transparent. By building each component manually, 
+          the project highlights the core principles behind modern information retrieval and how search quality is improved through preprocessing, scoring models, 
+          and query handling.
+        </p>
+      </div>
+
+      <div class="mb-4">
+        <h4 class="mb-1">Technologies</h4>
+        <p class="text-sm">Golang, SQLite</p>
+      </div>
+
+      <div class="mb-4">
+        <h4 class="mb-1">Key Features</h4>
+        <ul class="list-disc list-inside text-onix text-sm space-y-1">
+          <li>Web crawler for downloading and processing webpages.</li>
+          <li>TF-IDF based ranking of documents for relevance scoring.</li>
+          <li>Bigram phrase search for accurate matching.</li>
+          <li>Wildcard search support for flexible query expansion.</li>
+          <li>Snowball stemming for normalized text and better recall.</li>
+          <li>Automatic extraction and indexing of image URLs for image searching.</li>
+        </ul>
+      </div>
+
+      <div class="flex gap-4 mt-6">        
+        <a href="https://github.com/Stephh824/WebSearch" target="_blank" class="bg-luxray text-zekrom px-4 py-2 rounded-lg hover:text-white transition hover:shadow-md font-semibold">GitHub Repo</a>
+        <a href="./demos/blob" target="_blank" class="bg-luxray text-zekrom px-4 py-2 rounded-lg hover:text-white transition hover:shadow-md font-semibold">Live Demo</a>
       </div>
     </div>
   </div>
